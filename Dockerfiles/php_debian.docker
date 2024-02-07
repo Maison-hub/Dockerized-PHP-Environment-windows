@@ -1,0 +1,6 @@
+FROM debian
+RUN apt update && apt upgrade -y
+RUN apt install -y php git
+RUN git config --global user.email "antoine.rubeo-lisa9@etu.univ-lorraine.fr"
+RUN git config --global user.name "rubeolis5u"
+WORKDIR /app/src
